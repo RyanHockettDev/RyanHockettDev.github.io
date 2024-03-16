@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Show Me Missouri</title>
+        <link href="state.css" rel="stylesheet">
+        
+    </head>
+    <body  id="body" class="form">
+            <div class="top">
+                <img class="Missouri" id="link" src="Missouri.png">
+                <img class="outline" src="outline.png">
+            </div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="capitol.html">JEFFERSON CITY</a>
+                <a href="Joplin.html">JOPLIN</a>
+                <a href="branson.html">BRANSON</a>
+                <div id="resources">RESOURCES</div>
+            </nav>
+            <section>
+                <div class="container">
+                    <form>
+                        <div class="formControl">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="John/Jane" required>
+                        </div>
+                        <div class="formControl">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Doe" required>
+                        </div>
+                        <div class="formControl">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="exampleEmail@gmail.com" required>
+                        </div>
+                        <div class="formControl"> 
+                            <label for="confirmEmail">Confirm your email</label>
+                            <label for="confirmEmail" id="confirmation"></label>
+                            <input type="email" id="confirmEmail" placeholder="exampleEmail@gmail.com" required>
+                        </div>
+                        <div class="formControl"> 
+                            <label for="question">Character limit:</label>
+                            <label for="question" id="charCount">0/600</label>                     
+                            <textarea id="question" rows="8" cols="120" maxlength="600" placeholder="Enter your question or comment here!" required></textarea>
+                        </div>
+                        <div class="formControl">
+                            <input type="submit">
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <footer id="footer">
+                <h1>RESOURCES</h1>
+                <div>
+                    <a href="sources.html">Sources</a>
+                    <a href="form.html">Contact Us!</a>
+                </div>
+            </footer>
+            <script src="state.js"></script>
+        </body>        
+</html>
