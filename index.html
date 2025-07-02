@@ -1,84 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taniti</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html" class="navLink currentPage">Home</a>
-            <a href="foodAndDrink.html" class="navLink">Food and Drink</a>
-            <a href="arrivalAndDeparture.html" class="navLink">Arrival and Departure</a>
-            <a href="transportation.html" class="navLink">Transportation</a>
-            <a href="lodging.html" class="navLink">Lodging</a>
-            <a href="entertainment.html" class="navLink">Entertainment</a>
-            <a href="faq.html" class="navLink">FAQ</a>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="guideGrid">
-            <div class="gridContainerHero">
-                <div class="imageCard">
-                    <img src="images/taniti.jpg" alt="Seaside beach with rocks">
-                </div>
-                <div class="imageCard">
-                    <h1>Taniti: your tropical paradise awaits</h1>
-                    <p>Taniti is a small, tropical island in the Pacific. While the island has an area of less than 500 square miles, the terrain is varied and includes 
-                        both sandy and rocky beaches, a small but safe harbor, lush tropical rainforests, and a mountainous interior that includes a small, active volcano. 
-                        Taniti has an indigenous population of about 20,000. Until a recent increase in tourism, most of the Tanitian economy was dominated by fishing and agriculture.</p>
-                    <p>Use the links below to learn more about all there is to do on Taniti!</p>
-                </div>   
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html class="h-100 w-100">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hockett Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento" rel="stylesheet">
+        <style>
+            body {
+                background-image: url(darkWall.jpg);
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+            }
+            a {
+                text-decoration: none;
+                color:#272727;
+                border: 0.2rem solid #272727;
+                border-radius: 1rem;
+                padding: 0.1em;
+
+            }
+            .text{
+                font-family:"Sacramento";
+                font-size: 5vw;
+               
+            }
+            img{
+                width:20%;
+            }
+            a:hover{  
+                border: 0.2rem solid #fff;
+                box-shadow: 0 0 .2rem #fff,
+                            0 0 .2rem #fff,
+                            0 0 2rem #3296f3,
+                            0 0 0.8rem #3296f3,
+                            0 0 2.8rem #3296f3,
+                            inset 0 0 1.3rem #3296f3;
+            }
+            .neonText {
+                color:#fff;
+                text-shadow:
+                    0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px #3296f3,
+                    0 0 82px #3296f3,
+                    0 0 92px #3296f3,
+                    0 0 102px #3296f3,
+                    0 0 151px #3296f3;
+                animation: pulsate 0.11s ease-in-out infinite alternate;
+            }
+            @keyframes pulsate {
+                100% {
+
+                    text-shadow:
+                    0 0 4px #fff,
+                    0 0 11px #fff,
+                    0 0 19px #fff,
+                    0 0 40px #3296f3,
+                    0 0 80px #3296f3,
+                    0 0 90px #3296f3,
+                    0 0 100px #3296f3,
+                    0 0 150px #3296f3;
+                
+                }
+                
+                0% {
+
+                    text-shadow:
+                    0 0 4px #fff,
+                    0 0 10px #fff,
+                    0 0 18px #fff,
+                    0 0 38px #3296f3,
+                    0 0 73px #3296f3,
+                    0 0 80px #3296f3,
+                    0 0 94px #3296f3,
+                    0 0 140px #3296f3;
+
+                }
+            }
+        </style>
+    </head>
+    <body class="h-100 w-100">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="row h-100">
+            <div class="col d-flex flex-column justify-content-center">
+                <a href="about.html" class ="text mx-auto">about</a>
             </div>
-        </section>
-        <section class="guideGrid">
-            <div class="gridContainer">
-                <a href="foodAndDrink.html" class="imageCard">
-                    <img src="images/food.jpg" alt="Fish with Rice on Plate">
-                    <span class="caption">Food and Drink</span>
-                </a>
-                <a href="arrivalAndDeparture.html" class="imageCard">
-                    <img src="images/arrivals.jpg" alt="Airplane leaving island">
-                    <span class="caption">Arrival and Departure</span>
-                </a>
-                <a href="transportation.html" class="imageCard">
-                    <img src="images/transportation.jpg" alt="Green bus driving in city">
-                    <span class="caption">Island Transportation</span>
-                </a>
-                <a href="lodging.html" class="imageCard">
-                    <img src="images/lodging.jpg" alt="Tropical resort exterior">
-                    <span class="caption">Lodging</span>
-                </a>
-                <a href="entertainment.html" class="imageCard">
-                    <img src="images/entertainment.jpg" alt="Woman ziplining">
-                    <span class="caption">Entertainment</span>
-                </a>
-                <a href="faq.html" class="imageCard">
-                    <img src="images/faq.jpg" alt="Question mark on chalk board">
-                    <span class="caption">FAQ</span>
-                </a>
+            <div class="col d-flex flex-column justify-content-center" id="neon">
+                <div></div>
+                <img src="darkWall.jpg" alt="dark brick wall" class="d-none">
+                <img src="blueWall.jpg" alt="brick wall blue tint" class="d-none">
+                <img src="blueWall2.jpg" alt="brick wall blue tint" class="d-none">
+                <p class=" text title">Ryan Hockett</p>
+                <p class=" text">software engineer</p>
             </div>
-        </section>    
-    </main>
-    <footer>
-        <h3>Photo credits:</h3>
-        <p>Dashti, A. (2023). Fish with Rice on Plate [Photograph]. Pexels.
-            https://www.pexels.com/photo/fish-with-rice-on-plate-17649393/</p>
-        <p>Loiterton, J. (2018). People on the Beach [Photograph]. Pexels.
-            https://www.pexels.com/photo/people-on-the-beach-7502479/</p>
-        <p>Nguyen, A. (2024). A green bus is driving down a city street [Photograph]. Pexels.
-            https://www.pexels.com/photo/a-green-bus-is-driving-down-a-city-street-27863967/</p>
-        <p>P., Oleksandr. (2018). 	White and Blue Passenger Airplane Aerial Photography [Photograph]. Pexels.
-            https://www.pexels.com/photo/white-and-blue-passenger-airplane-aerial-photography-1004584/</p>
-        <p>Pixabay. (2017). Question Mark on Chalk Board [Photograph]. Pexels.
-            https://www.pexels.com/photo/question-mark-on-chalk-board-356079/</p>
-        <p>Tran, S.T. (2021). A Woman Riding a Zipline [Photograph]. Pexels.
-            https://www.pexels.com/photo/a-woman-riding-a-zipline-6454835/</p>
-        <p>Wiktor, F. (2017). Seaside [Photograph]. Pexels
-            https://www.pexels.com/photo/seaside-994605/</p>
-    </footer>
-</body>
+             <div class="col d-flex flex-column justify-content-center">
+                <a href="portfolio.html" class ="text mx-auto">portfolio</a>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
 </html>
